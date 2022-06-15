@@ -1,14 +1,18 @@
-package com.zupedu.bancodigital.model;
+package com.zupedu.bancodigital.domain;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import static javax.persistence.EnumType.STRING;
+import static javax.persistence.GenerationType.IDENTITY;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 import java.util.StringJoiner;
 
-import static javax.persistence.EnumType.STRING;
-import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.Entity;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Conta {
@@ -32,7 +36,7 @@ public class Conta {
      * @deprecated para uso dos frameworks
      */
     @Deprecated
-    public Conta() { }
+    public Conta() {}
 
     public Conta(Tipo tipo, Correntista correntista) {
         this.tipo = tipo;
@@ -49,8 +53,10 @@ public class Conta {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Conta conta = (Conta) o;
         return tipo == conta.tipo && Objects.equals(correntista, conta.correntista);
     }
@@ -62,11 +68,9 @@ public class Conta {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Conta.class.getSimpleName() + "[", "]")
-                .add("id=" + id)
-                .add("tipo=" + tipo)
-                .add("saldo=" + saldo)
-                .add("correntista=" + correntista)
-                .toString();
+        return new StringJoiner(", ", Conta.class.getSimpleName() + "[", "]").add(
+            "id=" + id
+        ).add("tipo=" + tipo).add("saldo=" + saldo).add("correntista=" + correntista).toString();
     }
+
 }
