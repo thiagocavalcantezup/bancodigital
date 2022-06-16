@@ -1,12 +1,12 @@
-package com.zupedu.bancodigital.adapters.persistence;
+package com.zupedu.bancodigital.adapters.persistence.correntistas;
 
 import java.util.Optional;
 
 import org.springframework.stereotype.Component;
 
-import com.zupedu.bancodigital.domain.Correntista;
-import com.zupedu.bancodigital.domain.ports.CadastraCorrentistaRepository;
-import com.zupedu.bancodigital.domain.ports.EncontraCorrentistaPorIdRepository;
+import com.zupedu.bancodigital.domain.correntistas.Correntista;
+import com.zupedu.bancodigital.domain.correntistas.ports.CadastraCorrentistaRepository;
+import com.zupedu.bancodigital.domain.correntistas.ports.EncontraCorrentistaPorIdRepository;
 
 @Component
 public class SqlCorrentistaRepositoryAdapter

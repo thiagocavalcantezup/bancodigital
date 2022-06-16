@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.application.input;
+package com.zupedu.bancodigital.application.correntistas.input;
 
 import static com.fasterxml.jackson.annotation.JsonCreator.Mode.PROPERTIES;
 
@@ -13,8 +13,8 @@ import org.hibernate.validator.constraints.br.CPF;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.zupedu.bancodigital.domain.Correntista;
-import com.zupedu.bancodigital.domain.DadosNovoCorrentista;
+import com.zupedu.bancodigital.domain.correntistas.Correntista;
+import com.zupedu.bancodigital.domain.correntistas.DadosNovoCorrentista;
 
 public class NovoCorrentistaRequest implements DadosNovoCorrentista {
 

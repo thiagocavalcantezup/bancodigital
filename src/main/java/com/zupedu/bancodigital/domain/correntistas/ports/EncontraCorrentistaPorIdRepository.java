@@ -1,8 +1,8 @@
-package com.zupedu.bancodigital.domain.ports;
+package com.zupedu.bancodigital.domain.correntistas.ports;
 
 import java.util.Optional;
 
-import com.zupedu.bancodigital.domain.Correntista;
+import com.zupedu.bancodigital.domain.correntistas.Correntista;
 
 public interface EncontraCorrentistaPorIdRepository {
 

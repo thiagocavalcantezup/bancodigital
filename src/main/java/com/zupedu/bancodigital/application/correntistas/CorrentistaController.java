@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.application;
+package com.zupedu.bancodigital.application.correntistas;
 
 import javax.validation.Valid;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.zupedu.bancodigital.application.input.NovoCorrentistaRequest;
-import com.zupedu.bancodigital.domain.CadastraCorrentistaService;
+import com.zupedu.bancodigital.application.correntistas.input.NovoCorrentistaRequest;
+import com.zupedu.bancodigital.domain.correntistas.CadastraCorrentistaService;
 
 @RestController
 @RequestMapping("/api/correntista")

@@ -1,24 +1,24 @@
-package com.zupedu.bancodigital.application.input;
+package com.zupedu.bancodigital.application.contas.input;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
-import com.zupedu.bancodigital.domain.Conta;
-import com.zupedu.bancodigital.domain.Correntista;
-import com.zupedu.bancodigital.domain.DadosNovaConta;
-import com.zupedu.bancodigital.domain.Tipo;
-import com.zupedu.bancodigital.domain.ports.EncontraCorrentistaPorIdRepository;
+import com.zupedu.bancodigital.domain.contas.Conta;
+import com.zupedu.bancodigital.domain.contas.DadosNovaConta;
+import com.zupedu.bancodigital.domain.contas.TipoConta;
+import com.zupedu.bancodigital.domain.correntistas.Correntista;
+import com.zupedu.bancodigital.domain.correntistas.ports.EncontraCorrentistaPorIdRepository;
 
 public class NovaContaRequest implements DadosNovaConta {
 
     @NotNull
-    private Tipo tipo;
+    private TipoConta tipo;
 
     @Positive
     @NotNull
     private Long correntistaId;
 
-    public Tipo getTipo() {
+    public TipoConta getTipo() {
         return tipo;
     }
 

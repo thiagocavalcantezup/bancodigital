@@ -1,9 +1,9 @@
-package com.zupedu.bancodigital.adapters.persistence;
+package com.zupedu.bancodigital.adapters.persistence.contas;
 
 import org.springframework.stereotype.Component;
 
-import com.zupedu.bancodigital.domain.Conta;
-import com.zupedu.bancodigital.domain.ports.CadastraContaRepository;
+import com.zupedu.bancodigital.domain.contas.Conta;
+import com.zupedu.bancodigital.domain.contas.ports.CadastraContaRepository;
 
 @Component
 public class SqlContaRepositoryAdapter implements CadastraContaRepository {

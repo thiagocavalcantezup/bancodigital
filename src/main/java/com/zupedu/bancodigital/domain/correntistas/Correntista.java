@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.domain;
+package com.zupedu.bancodigital.domain.correntistas;
 
 import static javax.persistence.GenerationType.IDENTITY;
 

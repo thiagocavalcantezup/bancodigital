@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.domain;
+package com.zupedu.bancodigital.domain.contas;
 
 import static javax.persistence.EnumType.STRING;
 import static javax.persistence.GenerationType.IDENTITY;
@@ -14,6 +14,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
+import com.zupedu.bancodigital.domain.correntistas.Correntista;
+
 @Entity
 public class Conta {
 
@@ -23,7 +25,7 @@ public class Conta {
 
     @Enumerated(STRING)
     @NotNull
-    private Tipo tipo;
+    private TipoConta tipo;
 
     @NotNull
     private BigDecimal saldo = BigDecimal.ZERO;
@@ -38,7 +40,7 @@ public class Conta {
     @Deprecated
     public Conta() {}
 
-    public Conta(Tipo tipo, Correntista correntista) {
+    public Conta(TipoConta tipo, Correntista correntista) {
         this.tipo = tipo;
         this.correntista = correntista;
     }

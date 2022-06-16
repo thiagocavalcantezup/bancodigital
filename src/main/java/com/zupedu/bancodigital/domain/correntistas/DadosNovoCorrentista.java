@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.domain;
+package com.zupedu.bancodigital.domain.correntistas;
 
 public interface DadosNovoCorrentista {
 

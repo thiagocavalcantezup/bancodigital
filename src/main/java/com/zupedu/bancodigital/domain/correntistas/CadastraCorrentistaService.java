@@ -1,8 +1,8 @@
-package com.zupedu.bancodigital.domain;
+package com.zupedu.bancodigital.domain.correntistas;
 
 import org.springframework.stereotype.Service;
 
-import com.zupedu.bancodigital.domain.ports.CadastraCorrentistaRepository;
+import com.zupedu.bancodigital.domain.correntistas.ports.CadastraCorrentistaRepository;
 
 @Service
 public class CadastraCorrentistaService {

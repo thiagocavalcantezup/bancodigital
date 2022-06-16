@@ -1,4 +1,4 @@
-package com.zupedu.bancodigital.application;
+package com.zupedu.bancodigital.application.contas;
 
 import javax.validation.Valid;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.zupedu.bancodigital.application.input.NovaContaRequest;
-import com.zupedu.bancodigital.domain.CadastraContaService;
+import com.zupedu.bancodigital.application.contas.input.NovaContaRequest;
+import com.zupedu.bancodigital.domain.contas.CadastraContaService;
 
 @RestController
 @RequestMapping("/api/contas")
